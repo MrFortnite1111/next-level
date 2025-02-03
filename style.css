@@ -3,15 +3,26 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: white;
     width: 100%;
     height: 100;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
 }
 
 .title-logo {
     width: 600px;
     height: auto;
+    animation: bounce;
 }
+
 
 .menu-btn {
     background-color: none;
@@ -31,6 +42,23 @@ body {
     width: 400px;
 }
 
-.corner_graphics {
-    position: absolute;
+.corner-pixels {
+    fill: #dceaf1;
+    z-index: -1;
 }
+
+.corner-pixels-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 1000px;
+    transform: scale(-1, -1);
+}
+
+.corner-pixels-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 1000px;
+}
+
