@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'fontspring'; 
+    src: url('assets/typefaces/fontspring-waverlycf-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'monaco'; 
+    src: url('assets/typefaces/monaco.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -25,21 +41,15 @@ header {
 
 
 .menu-btn {
-    background-color: none;
+    fill: none;
 }
 
 .menu-btn-svg {
-    fill: #DDE9F1;
+    fill: none;
 }
 
 .container1 {
 
-}
-
-.container2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 400px;
 }
 
 .corner-pixels {
@@ -61,4 +71,74 @@ header {
     left: 0;
     max-width: 1000px;
 }
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 500px;
+    gap: 1rem;
+    background-color: none;
+}
+
+h1 {
+    font-family: "lores-9-plus-wide", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #081821;
+    text-transform: uppercase; 
+    text-align: center;
+}
+
+button.menu-btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    border: none;
+}
+
+.menu-btn-svg {
+    background-color: none;
+}
+
+.btn-label {
+    position: absolute;
+    font-family: "lores-9-plus-wide", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #DDE9F1;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+
+@media (max-width: 500px) {
+
+    header {
+        height: 100%;
+    }
+
+    .title-logo {
+        width: 400px;
+    }
+
+    .container2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 400px;
+        height: 100%;
+        gap: 2rem;
+    }
+
+    .menu-btn-svg {
+        height: 75px;
+        width: 300px;
+    }
+
+    .menu-btn {
+        height: 75px;
+    }
+
+  }
 
