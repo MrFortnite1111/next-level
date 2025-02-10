@@ -159,6 +159,8 @@ button.menu-btn {
 
 .menu-btn-svg {
     background-color: none;
+        height: 70px;
+        width: 250px;
 }
 
 .btn-label {
@@ -211,7 +213,7 @@ button.menu-btn {
     }
 
     .menu-btn-svg {
-        height: 60px;
+        height: 70px;
         width: 250px;
     }
 
