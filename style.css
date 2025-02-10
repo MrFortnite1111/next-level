@@ -35,13 +35,18 @@ body {
 
 .background-scroll {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 200%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 100%;
     height: 100%;
     z-index: -2;
-    animation: moveBackground 5s linear infinite;
+    /* animation: moveBackground 6s linear infinite; */
     
+}
+
+.background-scroll > *:nth-child(odd) {
+    transform: translateY(50px);
 }
 
 
@@ -131,7 +136,6 @@ header {
     width: 500px;
     height: 250px;
     gap: 1rem;
-    background-color: none;
 }
 
 h1 {
@@ -149,7 +153,7 @@ button.menu-btn {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: none;
+    background: none;
     border: none;
 }
 
@@ -172,6 +176,23 @@ button.menu-btn {
     header {
         height: 100%;
     }
+
+    .background-scroll {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1rem;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+    }
+
+    .background-scroll > *:nth-child(odd) {
+        transform: translateY(50px);
+    }
+
+    .background-scroll
 
     h1 {
         font-size: 21px;
